@@ -5,11 +5,12 @@ using System.Net;
 using System.IO;
 
 
-namespace CSHARP{
+namespace CSHARP
+{
 
     public class Payload
     {
-        public int amount { get; set; }
+        public double amount { get; set; }
         public int appid { get; set; }
         public string clientreference { get; set; }
         public string clienttransid { get; set; }
@@ -21,16 +22,19 @@ namespace CSHARP{
     }
 
 
-   public class Redde{
+    public class Redde
+    {
         private string apiKey;
-        private int appID; 
+        private int appID;
 
-       public Redde(string apiKey, int appID){
+        public Redde(string apiKey, int appID)
+        {
             this.apiKey = apiKey;
             this.appID = appID;
         }
 
-    public string randomClientID(int Size){
+        public string randomClientID(int Size)
+        {
             string randomno = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghjklmnopqrstuvwxyz";
             StringBuilder builder = new StringBuilder();
             char ch;
@@ -41,9 +45,10 @@ namespace CSHARP{
                 builder.Append(ch);
             }
             return builder.ToString();
-    }
+        }
 
-    public string clientReferenceNumber (int Size){
+        public string clientReferenceNumber(int Size)
+        {
             string randomno = "1234567890";
             StringBuilder builder = new StringBuilder();
             char ch;
@@ -54,19 +59,21 @@ namespace CSHARP{
                 builder.Append(ch);
             }
             return builder.ToString();
-    }
+        }
 
-    public string receiveMoney(int amount, string walletnumber, string clientref, string clientid, string network){
-            
-            
+        public string receiveMoney(double amount, string walletnumber, string clientref, string clientid, string network, string description, string nickname)
+        {
+
+
             Payload redde = new Payload();
             redde.amount = amount;
             redde.appid = this.appID;
             redde.clientreference = clientref;
             redde.clienttransid = clientid;
-            redde.nickname = "wigal";
+            redde.nickname = nickname;
             redde.paymentoption = network;
             redde.walletnumber = walletnumber;
+            redde.description = description;
 
 
             try
@@ -92,16 +99,19 @@ namespace CSHARP{
                     return responseText.ToString();
                     //Console.WriteLine(responseText);
                 }
-                
 
-            }catch (WebException ex){
-              return  ex.Message;
-              //Console.WriteLine(ex.Message + "You have an Error");
+
             }
-        
-    }
-    public string sendMoney(int amount, string walletnumber, string clientref, string clientid, string network){
-            
+            catch (WebException ex)
+            {
+                return ex.Message;
+                //Console.WriteLine(ex.Message + "You have an Error");
+            }
+
+        }
+        public string sendMoney(int amount, string walletnumber, string clientref, string clientid, string network)
+        {
+
             Payload redde = new Payload();
             redde.amount = amount;
             redde.appid = this.appID;
@@ -135,14 +145,16 @@ namespace CSHARP{
                     return responseText.ToString();
                     //Console.WriteLine(responseText);
                 }
-                
 
-            }catch (WebException ex){
-              return  ex.Message;
-              //Console.WriteLine(ex.Message + "You have an Error");
+
             }
-        
-    }
-    
+            catch (WebException ex)
+            {
+                return ex.Message;
+                //Console.WriteLine(ex.Message + "You have an Error");
+            }
+
+        }
+
     }
 }

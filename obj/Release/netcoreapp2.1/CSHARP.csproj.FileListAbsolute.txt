@@ -1,0 +1,8 @@
+C:\Users\macde\Documents\GitHub\redde-sdk-CSharp\bin\Release\netcoreapp2.1\CSHARP.deps.json
+C:\Users\macde\Documents\GitHub\redde-sdk-CSharp\bin\Release\netcoreapp2.1\CSHARP.dll
+C:\Users\macde\Documents\GitHub\redde-sdk-CSharp\bin\Release\netcoreapp2.1\CSHARP.pdb
+C:\Users\macde\Documents\GitHub\redde-sdk-CSharp\obj\Release\netcoreapp2.1\CSHARP.csprojAssemblyReference.cache
+C:\Users\macde\Documents\GitHub\redde-sdk-CSharp\obj\Release\netcoreapp2.1\CSHARP.AssemblyInfoInputs.cache
+C:\Users\macde\Documents\GitHub\redde-sdk-CSharp\obj\Release\netcoreapp2.1\CSHARP.AssemblyInfo.cs
+C:\Users\macde\Documents\GitHub\redde-sdk-CSharp\obj\Release\netcoreapp2.1\CSHARP.dll
+C:\Users\macde\Documents\GitHub\redde-sdk-CSharp\obj\Release\netcoreapp2.1\CSHARP.pdb

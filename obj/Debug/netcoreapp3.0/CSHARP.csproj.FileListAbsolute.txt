@@ -11,3 +11,16 @@
 /Users/ricardovolvox/Desktop/WIGAL/REDDE SDK/CSHARP/obj/Debug/netcoreapp3.0/CSHARP.pdb
 /Users/ricardovolvox/Desktop/WIGAL/REDDE SDK/CSHARP/bin/Debug/netcoreapp3.0/Newtonsoft.Json.dll
 /Users/ricardovolvox/Desktop/WIGAL/REDDE SDK/CSHARP/obj/Debug/netcoreapp3.0/CSHARP.csproj.CopyComplete
+C:\Users\macde\Documents\GitHub\redde-sdk-CSharp\bin\Debug\netcoreapp3.0\CSHARP.exe
+C:\Users\macde\Documents\GitHub\redde-sdk-CSharp\bin\Debug\netcoreapp3.0\CSHARP.deps.json
+C:\Users\macde\Documents\GitHub\redde-sdk-CSharp\bin\Debug\netcoreapp3.0\CSHARP.runtimeconfig.json
+C:\Users\macde\Documents\GitHub\redde-sdk-CSharp\bin\Debug\netcoreapp3.0\CSHARP.runtimeconfig.dev.json
+C:\Users\macde\Documents\GitHub\redde-sdk-CSharp\bin\Debug\netcoreapp3.0\CSHARP.dll
+C:\Users\macde\Documents\GitHub\redde-sdk-CSharp\bin\Debug\netcoreapp3.0\CSHARP.pdb
+C:\Users\macde\Documents\GitHub\redde-sdk-CSharp\bin\Debug\netcoreapp3.0\Newtonsoft.Json.dll
+C:\Users\macde\Documents\GitHub\redde-sdk-CSharp\obj\Debug\netcoreapp3.0\CSHARP.csprojAssemblyReference.cache
+C:\Users\macde\Documents\GitHub\redde-sdk-CSharp\obj\Debug\netcoreapp3.0\CSHARP.AssemblyInfoInputs.cache
+C:\Users\macde\Documents\GitHub\redde-sdk-CSharp\obj\Debug\netcoreapp3.0\CSHARP.AssemblyInfo.cs
+C:\Users\macde\Documents\GitHub\redde-sdk-CSharp\obj\Debug\netcoreapp3.0\CSHARP.csproj.CopyComplete
+C:\Users\macde\Documents\GitHub\redde-sdk-CSharp\obj\Debug\netcoreapp3.0\CSHARP.dll
+C:\Users\macde\Documents\GitHub\redde-sdk-CSharp\obj\Debug\netcoreapp3.0\CSHARP.pdb

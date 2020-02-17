@@ -6,3 +6,5 @@ C:\Users\macde\Documents\GitHub\redde-sdk-CSharp\obj\Debug\netcoreapp2.1\REDDE.A
 C:\Users\macde\Documents\GitHub\redde-sdk-CSharp\obj\Debug\netcoreapp2.1\REDDE.AssemblyInfo.cs
 C:\Users\macde\Documents\GitHub\redde-sdk-CSharp\obj\Debug\netcoreapp2.1\REDDE.dll
 C:\Users\macde\Documents\GitHub\redde-sdk-CSharp\obj\Debug\netcoreapp2.1\REDDE.pdb
+C:\Users\macde\Documents\GitHub\redde-sdk-CSharp\bin\Debug\netcoreapp2.1\REDDE.runtimeconfig.json
+C:\Users\macde\Documents\GitHub\redde-sdk-CSharp\bin\Debug\netcoreapp2.1\REDDE.runtimeconfig.dev.json

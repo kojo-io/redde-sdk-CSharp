@@ -37,6 +37,8 @@ namespace REDDE.v1.Services
                 httpWebRequest.Method = "POST";
                 httpWebRequest.Headers.Add("ApiKey", this._apiKey);
 
+                model.appid = _appID;
+
                 using (var streamWriter = new StreamWriter(httpWebRequest.GetRequestStream()))
                 {
                     string json = JsonConvert.SerializeObject(model, Formatting.Indented);
@@ -67,7 +69,7 @@ namespace REDDE.v1.Services
                 httpWebRequest.ContentType = "application/json; charset=utf-8";
                 httpWebRequest.Method = "POST";
                 httpWebRequest.Headers.Add("ApiKey", this._apiKey);
-
+                model.appid = _appID;
                 using (var streamWriter = new StreamWriter(httpWebRequest.GetRequestStream()))
                 {
                     string json = JsonConvert.SerializeObject(model, Formatting.Indented);

@@ -28,6 +28,10 @@ Enter your API key and App ID which was provided to you by the Redde Team:
 
 ```c#
 
+#Import REDDE SDK into your project and add this to the imports to your .cs file
+using Redde.v1.Services;
+using Redde.V1.Model;
+
 #Replace App ID with your App ID
 int app_id = 349009;
 
@@ -36,13 +40,13 @@ string api_key = "";
 
 
 #Create an instance of Redde Class
-Redde.v1.Services.Transactions red = new Redde.v1.Services.Transactions(api_key, app_id);
+Transactions red = new Transactions(api_key, app_id);
 
 #Client Reference
-string client_ref = red.clientReferenceNumber(6);\n
+string client_ref = ReddeUtilities.RandomClientTransactionID(6)
 
 #Client ID
-string client_id = red.randomClientID(6);
+string client_id = ReddeUtilities.RandomClientTransactionID(6);
 
 
 ``` 
@@ -52,26 +56,43 @@ string client_id = red.randomClientID(6);
 
 #### Receiving money from Customer or Client
 
-To use the API to recieve money from a customer, the receiveMoney() method will be used which takes takes 5 required arguments which are: **amount, network type(MTN, AIRTELTIGO, VODAFONE), phone number, client reference, and client id** respectively.
+To use the API to recieve money from a customer, the ReceiveMoney() method will be used which takes takes the PayLoad object with required arguments which are: **amount, payment option(which is network type(MTN, AIRTELTIGO, VODAFONE)), phone number, client reference, client id, description, nickname** respectively.
 
 ```c#
 
-#Enter App ID
+#Import REDDE SDK into your project and add this to the imports to your .cs file
+using Redde.v1.Services;
+using Redde.V1.Model;
+
+#Replace App ID with your App ID
 int app_id = 349009;
 
 #Enter Api Key
 string api_key = "";
 
+
 #Create an instance of Redde Class
-Redde red = new Redde(api_key, app_id);
+Transactions red = new Transactions(api_key, app_id);
 
 #Client Reference
-string client_ref = red.clientReferenceNumber(6);
+string client_ref = ReddeUtilities.RandomClientTransactionID(6)
 
 #Client ID
-string client_id = red.randomClientID(6);
+string client_id = ReddeUtilities.RandomClientTransactionID(6);
 
-Console.WriteLine(red.receiveMoney(1, "233200000000", client_ref, client_id, "MTN"));
+#PayLoad Object
+var payload = new PayLoad
+{
+   amount = 0.5,
+   clientreference = client_ref,
+   clienttransid = client_id,
+   description = "Testing of Api",
+   nickname = "WIGALS",
+   paymentoption = "VODAFONE",
+   walletnumber = "233200000000"
+};
+
+Console.WriteLine(red.ReceiveMoney(payload));
 
 
 ```
@@ -79,7 +100,7 @@ Console.WriteLine(red.receiveMoney(1, "233200000000", client_ref, client_id, "MT
 
 #### Sending money to a Customer or Client
 
-To use the API to send money to a customer, the sendMoney() method will be used which takes takes 5 required arguments which are: **amount, network type(MTN, AIRTELTIGO, VODAFONE), phone number, client reference, and client id** respectively.
+To use the API to recieve money from a customer, the SendMoney() method will be used which takes takes the PayLoad object with required arguments which are: **amount, payment option(which is network type(MTN, AIRTELTIGO, VODAFONE)), phone number, client reference, client id, description, nickname** respectively.
 
 ```c#
 
@@ -91,15 +112,27 @@ int app_id = 349009;
 string api_key = "";
 
 #Create an instance of Redde Class
-Redde red = new Redde(api_key, app_id);
+Transactions red = new Transactions(api_key, app_id);
 
 #Client Reference
-string client_ref = red.clientReferenceNumber(6);
+string client_ref = ReddeUtilities.RandomClientTransactionID(6)
 
 #Client ID
-string client_id = red.randomClientID(6);
+string client_id = ReddeUtilities.RandomClientTransactionID(6);
 
-Console.WriteLine(red.sendMoney(1, "233200000000", client_ref, client_id, "MTN"));
+#PayLoad Object
+var payload = new PayLoad
+{
+   amount = 0.5,
+   clientreference = client_ref,
+   clienttransid = client_id,
+   description = "Testing of Api",
+   nickname = "WIGALS",
+   paymentoption = "VODAFONE",
+   walletnumber = "233200000000"
+};
+
+Console.WriteLine(red.SendMoney(payload));
 
 ```
 

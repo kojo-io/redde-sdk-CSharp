@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29709.97
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSHARP", "CSHARP.csproj", "{F739D0DB-706D-41CD-A2C8-740586B6A0C1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "REDDE", "REDDE.csproj", "{CAAD5601-95E8-4676-AF53-E676F439A684}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F739D0DB-706D-41CD-A2C8-740586B6A0C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F739D0DB-706D-41CD-A2C8-740586B6A0C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F739D0DB-706D-41CD-A2C8-740586B6A0C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F739D0DB-706D-41CD-A2C8-740586B6A0C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAAD5601-95E8-4676-AF53-E676F439A684}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAAD5601-95E8-4676-AF53-E676F439A684}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAAD5601-95E8-4676-AF53-E676F439A684}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAAD5601-95E8-4676-AF53-E676F439A684}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

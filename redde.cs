@@ -67,7 +67,7 @@ namespace CSHARP
 
             Payload redde = new Payload();
             redde.amount = amount;
-            redde.appid = this.appID;
+            redde.appid = appID;
             redde.clientreference = clientref;
             redde.clienttransid = clientid;
             redde.nickname = nickname;

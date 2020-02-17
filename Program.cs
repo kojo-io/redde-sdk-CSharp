@@ -1,4 +1,6 @@
 ﻿using System;
+using REDDE.v1.Model;
+using REDDE.v1.Services;
 
 
 namespace CSHARP
@@ -14,15 +16,28 @@ namespace CSHARP
             string api_key = "BDGpL9D2Q7VnzqhPCU68f66zjAchhsNbmVbJNvAcD8B8hmEdnH";
 
             //Create an instance of Redde Package
-            Redde red = new Redde(api_key, app_id);
+            Transactions red = new Transactions(api_key, app_id);
 
             //Client Reference
-            string client_ref = red.clientReferenceNumber(6);
+            string client_ref = ReddeUtilities.ClientReferenceNumber(6);
 
             //Client ID
-            string client_id = red.randomClientID(6);
+            string client_id = ReddeUtilities.RandomClientTransactionID(6);
 
-            Console.WriteLine(red.receiveMoney(0.52, "233274323816", client_ref, client_id, "AIRTELTIGO", "", "KAZITRIPS"));
+            //Payload object
+            var payload = new PayLoad
+            {
+                amount = 0.5,
+                clientreference = client_ref,
+                clienttransid = client_id,
+                description = "Testing of Api",
+                nickname = "WIGAL",
+                paymentoption = "AIRTELTIGO",
+                walletnumber = "233274323816"
+            };
+            
+
+            Console.WriteLine(red.SendMoney(payload));
 
         }
 

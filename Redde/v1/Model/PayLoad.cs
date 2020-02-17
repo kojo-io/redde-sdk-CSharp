@@ -9,34 +9,34 @@ namespace REDDE.v1.Model
         /// <summary>
         /// amount
         /// </summary>
-        public double Amount { get; set; }
+        public double amount { get; set; }
         /// <summary>
         /// AppId provided by WIGAL
         /// </summary>
-        public int AppId { get; set; }
+        public int appid { get; set; }
         /// <summary>
         /// client reference for transaction
         /// </summary>
-        public string ClientReference { get; set; }
+        public string clientreference { get; set; }
         /// <summary>
         /// transaction id
         /// </summary>
-        public string ClientTransactionId { get; set; }
+        public string clienttransid { get; set; }
         /// <summary>
         /// transaction description
         /// </summary>
-        public string Description { get; set; }
+        public string description { get; set; }
         /// <summary>
         /// your nickname or service nickname
         /// </summary>
-        public string Nickname { get; set; }
+        public string nickname { get; set; }
         /// <summary>
         /// payment option eg: (MTN, AIRTELTIGO etc)
         /// </summary>
-        public string PaymentOption { get; set; }
+        public string paymentoption { get; set; }
         /// <summary>
         /// wallet number or mobile number
         /// </summary>
-        public string WalletNumber { get; set; }
+        public string walletnumber { get; set; }
     }
 }

@@ -3,7 +3,7 @@
 
 
 # redde-sdk-CSharp
-CSharp SDK that allows merchants to receive, send, check transaction status, and perform lots of payment transactions.
+REDDE CSharp SDK that allows merchants to receive, send, check transaction status, and perform lots of payment transactions.
 
 Before you can have access to APIs you need to register and create an [Account](https://app.reddeonline.com/register) on reddeonline. Header for all request should have {"apikey": "string"}: and this API key will be sent to merchant when their app configuration is setup for them by Wigal.
 
@@ -36,10 +36,10 @@ string api_key = "";
 
 
 #Create an instance of Redde Class
-Redde red = new Redde(api_key, app_id);
+Redde.v1.Services.Transactions red = new Redde.v1.Services.Transactions(api_key, app_id);
 
 #Client Reference
-string client_ref = red.clientReferenceNumber(6);
+string client_ref = red.clientReferenceNumber(6);\n
 
 #Client ID
 string client_id = red.randomClientID(6);

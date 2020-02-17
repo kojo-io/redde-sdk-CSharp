@@ -736,9 +736,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\macde\\Documents\\GitHub\\redde-sdk-CSharp\\CSHARP.csproj",
-      "projectName": "CSHARP",
-      "projectPath": "C:\\Users\\macde\\Documents\\GitHub\\redde-sdk-CSharp\\CSHARP.csproj",
+      "projectUniqueName": "C:\\Users\\macde\\Documents\\GitHub\\redde-sdk-CSharp\\REDDE.csproj",
+      "projectName": "REDDE",
+      "projectPath": "C:\\Users\\macde\\Documents\\GitHub\\redde-sdk-CSharp\\REDDE.csproj",
       "packagesPath": "C:\\Users\\macde\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\macde\\Documents\\GitHub\\redde-sdk-CSharp\\obj\\",
       "projectStyle": "PackageReference",

@@ -30,7 +30,7 @@ namespace CSHARP
                 amount = 0.5,
                 clientreference = client_ref,
                 clienttransid = client_id,
-                description = "Testing of Api",
+                description = "",
                 nickname = "WIGAL",
                 paymentoption = "AIRTELTIGO",
                 walletnumber = "233274323816"

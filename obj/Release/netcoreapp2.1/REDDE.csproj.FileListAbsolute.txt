@@ -1,0 +1,10 @@
+C:\Users\macde\Documents\GitHub\redde-sdk-CSharp\bin\Release\netcoreapp2.1\REDDE.deps.json
+C:\Users\macde\Documents\GitHub\redde-sdk-CSharp\bin\Release\netcoreapp2.1\REDDE.runtimeconfig.json
+C:\Users\macde\Documents\GitHub\redde-sdk-CSharp\bin\Release\netcoreapp2.1\REDDE.runtimeconfig.dev.json
+C:\Users\macde\Documents\GitHub\redde-sdk-CSharp\bin\Release\netcoreapp2.1\REDDE.dll
+C:\Users\macde\Documents\GitHub\redde-sdk-CSharp\bin\Release\netcoreapp2.1\REDDE.pdb
+C:\Users\macde\Documents\GitHub\redde-sdk-CSharp\obj\Release\netcoreapp2.1\REDDE.csprojAssemblyReference.cache
+C:\Users\macde\Documents\GitHub\redde-sdk-CSharp\obj\Release\netcoreapp2.1\REDDE.AssemblyInfoInputs.cache
+C:\Users\macde\Documents\GitHub\redde-sdk-CSharp\obj\Release\netcoreapp2.1\REDDE.AssemblyInfo.cs
+C:\Users\macde\Documents\GitHub\redde-sdk-CSharp\obj\Release\netcoreapp2.1\REDDE.dll
+C:\Users\macde\Documents\GitHub\redde-sdk-CSharp\obj\Release\netcoreapp2.1\REDDE.pdb
